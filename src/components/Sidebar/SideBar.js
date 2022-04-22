@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './SideBar.css';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreateIcon from '@material-ui/icons/Create';
-import SideBarOption from './SideBarOption';
+import SideBarOption from '../SidebarOption/SideBarOption';
 import InsertCommentIcon from '@material-ui/icons/InsertComment';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
@@ -13,7 +13,7 @@ import AppsIcon from '@material-ui/icons/Apps';
 import AddIcon from '@material-ui/icons/Add';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import db from '../firebase';
+import db from '../../firebase';
 
 function SideBar() {
   const [channels, setChannels] = useState([]);
