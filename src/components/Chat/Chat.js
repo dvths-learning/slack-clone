@@ -43,11 +43,11 @@ function Chat() {
         </div>
       </div>
       <div className="chat__messages">
-        {roomMessages.map(({ message, timestamp, user, userImage }) => (
+        {roomMessages.map(({ message, timeStamp, user, userImage }) => (
           <Message
             // TODO: Definir unica key={}
             message={message}
-            timestamp={timestamp}
+            timeStamp={timeStamp}
             user={user}
             userImage={userImage}
           />
