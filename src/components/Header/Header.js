@@ -20,7 +20,7 @@ function Header() {
       </div>
       <div className="header__search">
         <SearchIcon />
-        <input placeholder="Busca do Header" />
+        <input placeholder="Search for messages" />
       </div>
       <div className="header__right">
         <HelpOutlineIcon />
