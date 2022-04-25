@@ -33,7 +33,7 @@ function SideBar() {
     <div className="sidebar">
       <div className="sidebar__header">
         <div className="sidebar__info">
-          <h2>Clever Programming</h2>
+          <h2>Ground Controll to major Tom</h2>
           <h3>
             <FiberManualRecordIcon />
             {user?.displayName}
