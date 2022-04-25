@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import StarBorderOutlineIcon from '@material-ui/icons/StarBorderOutlined';
 import InfoOutlineIcon from '@material-ui/icons/InfoOutlined';
 import Message from '../Message/Message';
+import ChatInput from '../ChatInput/ChatInput';
 import db from '../../firebase';
 
 function Chat() {
@@ -45,7 +46,7 @@ function Chat() {
       <div className="chat__messages">
         {roomMessages.map(({ message, timeStamp, user, userImage }) => (
           <Message
-            // TODO: Definir unica key={}
+            key={timeStamp}
             message={message}
             timeStamp={timeStamp}
             user={user}
@@ -53,6 +54,7 @@ function Chat() {
           />
         ))}
       </div>
+      <ChatInput channelName={roomDetails?.name} channelId={roomId} />{' '}
     </div>
   );
 }
