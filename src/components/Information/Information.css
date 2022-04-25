@@ -1,0 +1,8 @@
+.info {
+  margin: 15px 10px;
+}
+
+.info > p {
+  margin-top: 10px;
+  font-size: 15px;
+}
