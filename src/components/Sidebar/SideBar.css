@@ -4,6 +4,11 @@
   background-color: var(--slack-color);
   border-top: 1px solid #49274b;
   max-width: 260px;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar > hr {
@@ -12,7 +17,6 @@
   border: 1px solid #49274b;
 }
 
-/* Posicionamento do Icone de criação (pencil) */
 .sidebar__header {
   display: flex;
   border-bottom: 1px solid #49274b;
@@ -51,4 +55,11 @@
   font-size: 18px;
   background-color: white;
   border-radius: 999px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  .siderbar-header > .MuiSvgIcon-root {
+    margin-left: 10px;
+  }
 }
